@@ -32,7 +32,7 @@ ending = Process.clock_gettime(Process::CLOCK_MONOTONIC)
 puts "Thoi gian chay: " + (ending-starting).to_s
 #Thoi gian chay: 54.11038712499999 giay - Lan 1
 #Thoi gian chay: 52.22061450399997 giay - Lan 2
-# #Thoi gian chay: 55.62464593999994 giay - Lan 3
+#Thoi gian chay: 55.62464593999994 giay - Lan 3
 puts User.count
 #500000
 puts User.find_by(email: 'nguyenvana500000@gmail.com').inspect
