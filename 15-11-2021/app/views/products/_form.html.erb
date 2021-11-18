@@ -1,0 +1,36 @@
+<div class="container px-4 px-lg-5 my-5">
+    <% if @product.errors.any? %>
+    <div class="alert alert-danger text-center fw-bolder" role="alert">
+      <% @product.errors.full_messages.each do |msg| %>
+        <%= msg %><br>
+      <% end %>
+    </div>
+    <% end %>
+  <div class="text-center text-black fw-bolder">
+    <%= form_with model: @product, local: true do |form| %>
+      <p>
+        <%= form.label :SKU %><br>
+        <%= form.text_field :sku %>
+      </p>
+      <p>
+        <%= form.label :TITLE %><br>
+        <%= form.text_field :title %>
+      </p>
+      <p>
+        <%= form.label :PRICE %><br>
+        <%= form.text_field :price %>
+      </p>
+      <p>
+        <%= form.label :QUANTITY %><br>
+        <%= form.text_field :quantity %>
+      </p>
+      <p>
+        <%= form.label :IMAGE %><br>
+        <%= form.text_field :image %>
+      </p>
+      <p>
+        <%= form.submit %>
+      </p>
+    <% end %>
+  </div>
+</div>
