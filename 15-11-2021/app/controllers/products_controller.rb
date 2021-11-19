@@ -24,7 +24,7 @@ class ProductsController < ApplicationController
 
     def create
       @product  = Product.new(product_params)
-      if @product .save
+      if @product.save
         #Da tao san pham moi
         flash[:notice]= "New product has been created"
         redirect_to product_path(@product .id)
