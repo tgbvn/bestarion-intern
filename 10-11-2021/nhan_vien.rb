@@ -12,7 +12,7 @@ class Employee
   end
 
   def self.only_integer?(str)
-    str.match(/\A[+-]?\d+\z/)
+    str.match(/\A[+]?\d+\z/)
   end
 
   def self.only_letter?(str)
