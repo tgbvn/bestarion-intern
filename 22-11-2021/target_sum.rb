@@ -7,7 +7,7 @@ def find_two_elements(arr_input,target_sum)
   arr_result = Array.new
   arr_length = arr_input.length
   base_index = 0
-  for step in 0..(arr_length*arr_length - 1)
+  for step in 0...(arr_length * arr_length)
     mirror_index = step % arr_input.length
     if (arr_input[base_index] + arr_input[mirror_index]) == target_sum && arr_input[base_index] != arr_input[mirror_index]
       arr_result = [arr_input[base_index],arr_input[mirror_index]]
