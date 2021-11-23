@@ -35,3 +35,5 @@ arr_parent = arr_create
 puts "Mang da tao: " + arr_parent.to_s
 puts "Mang con tang dan: " + arr_child_asc_build(arr_parent).to_s
 
+# Code e viết tốt, dễ đọc, biết tách hàm, biết sử dụng regex
+# Biến i em có thể xem xét đặt tên khác có ý nghĩa hơn
