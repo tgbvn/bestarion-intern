@@ -21,3 +21,4 @@ def find_two_elements(arr_input,target_sum)
 end
 
 puts "Ket qua: " + find_two_elements(ARR_NUMBERS,TARGET_SUM).to_s
+# Code của e ngắn gọn, giải thuật mới lạ, không sử dụng thêm include? là một điểm động
